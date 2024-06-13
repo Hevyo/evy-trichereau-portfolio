@@ -1,0 +1,72 @@
+[
+    {
+        "id" : "1stkos",
+        "title" : "Langages et frameworks",
+        "skills" : [
+            { 
+                "title" : "HTML",
+                "description" : "Intégration conforme à une maquette et responsive",
+                "picture" : "https://img.icons8.com/?size=100&id=23028&format=png&color=000000"
+            },
+            {
+                "title" : "CSS",
+                "description" : "Intégration conforme à une maquette et animations de base",
+                "picture" : "https://img.icons8.com/?size=100&id=21278&format=png&color=000000"
+            },
+            {
+                "title" : "Sass",
+                "description" : "Optimisation du CSS, utilisation des variables et des fonctions",
+                "picture" : "https://img.icons8.com/?size=100&id=QBqFNfPPB2Kx&format=png&color=000000"
+            },
+            {
+                "title" : "JavaScript",
+                "description" : "Création de pages web dynamique et manipulation de données",
+                "picture" : "https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+            },
+            {
+                "title" : "React",
+                "description" : "Création d'applications réactives et dynamiques basées sur des composants modulaires",
+                "picture" : "https://img.icons8.com/?size=100&id=123603&format=png&color=000000"
+            },
+            {
+                "title" : "Express",
+                "description" : "Création de serveurs et d'API RESTful avec implémentation des opérations CRUD",
+                "picture" : "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+            }
+        ]
+    },
+    {
+        "id" : "2ndkos",
+        "title" : "Outils",
+        "skills" : [
+            {
+                "title" : "Visual Studio Code",
+                "picture" : "https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000"
+            },
+            {
+                "title" : "Node.js",
+                "picture" : "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+            },
+            {
+                "title" : "MongoDB",
+                "picture" : "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+            },
+            { 
+                "title" : "Git & Github",
+                "picture" : "https://img.icons8.com/?size=100&id=62856&format=png&color=000000"
+            },
+            {
+                "title" : "Postman",
+                "picture" : "https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png&color=000000"
+            },
+            {
+                "title" : "Google Analytics",
+                "picture" : "https://img.icons8.com/?size=100&id=fcKpGwAbxxfP&format=png&color=000000"
+            },
+            {
+                "title" : "Notion",
+                "picture" : "https://img.icons8.com/?size=100&id=uVERmCBZZACL&format=png&color=000000"
+            }
+        ]
+    }
+]

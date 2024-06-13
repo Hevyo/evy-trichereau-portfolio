@@ -1,0 +1,76 @@
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 18%;
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        align-items: center;
+        height: 54px;
+        color: white;
+        background-color: grey;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &__groupTitle{
+            display: flex;
+            width: 60%;
+            gap: 10%;
+            &--logo{
+                height: 35px;
+            }
+            &--title{
+                font-size: 24px;
+            }
+        }
+        &--arrow {
+            transform: rotate(360deg);
+            transition: transform 400ms ease-in-out;
+            font-size: 20px;
+        }
+        &--arrowDown {
+            transform: rotate(180deg);
+            transition: transform 500ms ease-in-out;
+            font-size: 20px;
+        }
+        &:hover {
+            background: darken(grey, 20%);
+            box-shadow: 0px 0px 9px -1px #000000;
+        }
+    }
+    &__boxInfo {
+        overflow: hidden;
+        transition: height 0.2s ease;
+        &--description {
+            font-size: 18px;
+            line-height: 150%;
+            padding: 0 30px 0 30px;
+            list-style-type: none;
+        }
+    }
+    @media (max-width: 540px) {
+        gap: 0;
+        &__button {
+            height: 30px;
+            padding: 0 15px;
+            &__title {
+                font-size: 13px;
+                margin: 0;
+            }
+            &--arrow {
+                font-size: 19px;
+            }
+            &--arrowDown {
+                font-size: 19px;
+            }
+        }
+        &__boxInfo {
+            &--info {
+                font-size: 12px;
+            }
+        }
+    }
+}
