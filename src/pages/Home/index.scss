@@ -10,8 +10,17 @@
     align-items: center;
     justify-content: center;
     }
-}
-
-li {
-    list-style-type: none;
+    &__skills{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        &--title{
+            width: 100%;
+        }
+        &--skillsContainer{
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }

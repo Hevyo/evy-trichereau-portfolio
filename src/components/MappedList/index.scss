@@ -1,0 +1,23 @@
+.typeOfSkillContainer{
+    width: 50%;
+    &__tabsList {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-evenly;
+        &--skill{
+            list-style-type: none;
+            width: 45%;
+        }
+    }
+    &__badgesList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        justify-content: center;
+        &--skill{
+            list-style-type: none;
+        }
+    }
+}
