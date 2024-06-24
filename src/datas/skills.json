@@ -1,6 +1,5 @@
 [
     {
-        "id" : "1stkos",
         "title" : "Langages et frameworks",
         "skills" : [
             { 
@@ -36,7 +35,6 @@
         ]
     },
     {
-        "id" : "2ndkos",
         "title" : "Outils",
         "skills" : [
             {
