@@ -5,7 +5,7 @@
             "/workimages/booki_home_screenshot.png"
         ],
         "description" : "Création de la page d'accueil d'une agence de voyage responsive en utilisant HTML et CSS et en se basant sur une maquette.",
-        "languages&tools" : [
+        "languagesandtools" : [
             "HTML",
             "CSS"
         ],
@@ -18,10 +18,10 @@
             "/workimages/sophiebluel_login_screenshot.png"
         ],
         "description" : "Création d'un portfolio d'architecte d'intérieur avec une interface dynamique communiquant avec une API à l'aide de JavaScript",
-        "languages&tools" : [
+        "languagesandtools" : [
             "HTML",
             "CSS",
-            "Javascript"
+            "JavaScript"
         ],
         "github" : "https://github.com/Hevyo/Portfolio-architecte-sophie-bluel"
     },
@@ -31,9 +31,9 @@
             "/workimages/ninacarducci_home_screenshot.png"
         ],
         "description" : "Débuggage et travail sur l'optimisation du référencement (SEO), les performances et l'accessibilité d'un portfolio de photographe",
-        "languages&tools" : [
+        "languagesandtools" : [
             "HTML",
-            "Javascript"
+            "JavaScript"
         ],
         "github" : "https://github.com/Hevyo/nina-carducci.github.io"
     },
@@ -46,9 +46,9 @@
             "/workimages/kasa_error_screenshot.png"
         ],
         "description" : "Intégration du front-end d'une entreprise de location d'appartements à l'aide de React en utilisant des composants modulaires. Utilisation de SASS pour gérer le CSS. Intégration d'animations simples.",
-        "languages&tools" : [
+        "languagesandtools" : [
             "React",
-            "Javascript",
+            "JavaScript",
             "Sass"
         ],
         "github" : "https://github.com/Hevyo/nina-carducci.github.io"
@@ -62,10 +62,10 @@
             "/workimages/monvieuxgrimoire_addabook_screenshot.png"
         ],
         "description" : "Développement du back-end d'un site de notation de livres en créant en serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données. Création d'une API RESTful avec implémentation des opérations CRUD pour créer, lire, mettre à jour et supprimer les données",
-        "languages&tools" : [
+        "languagesandtools" : [
             "Express",
             "MongoDB",
-            "Javascript"
+            "JavaScript"
         ],
         "github" : "https://github.com/Hevyo/Mon-Vieux-Grimoire"
     }

@@ -1,10 +1,12 @@
 import './index.scss'
-import skillsData from '../../datas/skills.json'
+import skillList from '../../datas/skills.json'
+import works from '../../datas/works.json'
 import MappedList from '../../components/MappedList'
+import WorkCard from '../../components/Card'
 
 function Home() {
-  const tools = skillsData[1]
-  const languages = skillsData[0]
+  const tools = skillList[1].skills
+  const languages = skillList[0].skills
     return (
       <div className='mainContainer'>
         <div className='mainContainer__banner'>
@@ -20,6 +22,13 @@ function Home() {
         </div>
         <div className='mainContainer__projects'>
           <h2>Mes projets</h2>
+          <ul>
+            {works.map((work, index) => (
+              <li>
+                <WorkCard {...work} key={index}/>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className='mainContainer__Contact'>
           <h2>Contact</h2>

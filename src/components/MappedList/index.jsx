@@ -4,9 +4,9 @@ import './index.scss'
 
 function MappedList({data, type}) {
     const SkillsList = ({ skills, type }) => (
-        <ul className={type === 'tab' ? "typeOfSkillContainer__tabsList" : "typeOfSkillContainer__badgesList"}>
+        <ul className={type === 'tab' ? "SkillsContainer__tabsList" : "SkillsContainer__badgesList"}>
         {skills.map((skill, index) => (
-            <li key={index} className={type === 'tab' ? "typeOfSkillContainer__tabsList--skill" : "typeOfSkillContainer__badgesList--skill"}>
+            <li key={index} className={type === 'tab' ? "SkillsContainer__tabsList--skill" : "SkillsContainer__badgesList--skill"}>
             {type === 'tab' ? (
                 <Tab {...skill} />
             ) : (
@@ -16,11 +16,11 @@ function MappedList({data, type}) {
         ))}
         </ul>
   )
-  console.log(data.skills)
+
   return(
     
-    <div className="typeOfSkillContainer">
-        <SkillsList skills={data.skills} type={type} />
+    <div className="SkillsContainer">
+        <SkillsList skills={data} type={type} />
     </div>
   )
 }
