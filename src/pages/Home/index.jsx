@@ -3,6 +3,7 @@ import skillList from '../../datas/skills.json'
 import works from '../../datas/works.json'
 import MappedList from '../../components/MappedList'
 import WorkCard from '../../components/Card'
+import ContactForm from '../../components/Form'
 
 function Home() {
   const tools = skillList[1].skills
@@ -14,7 +15,7 @@ function Home() {
           <p>Développeuse web fullstack</p>
         </div>
         <section className='mainContainer__skills'>
-          <i class="fa-solid fa-bookmark"></i>
+          <i className="fa-solid fa-bookmark"></i>
           <h2 className='mainContainer__skills--title'>Mes compétences</h2>
           <div className='mainContainer__skills--skillsContainer'>
             <MappedList data={languages} type="tab"/>
@@ -33,6 +34,7 @@ function Home() {
         </section>
         <section className='mainContainer__Contact'>
           <h2>Contact</h2>
+          <ContactForm/>
         </section>
       </main>
     )
