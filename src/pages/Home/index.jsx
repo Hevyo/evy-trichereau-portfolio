@@ -8,32 +8,33 @@ function Home() {
   const tools = skillList[1].skills
   const languages = skillList[0].skills
     return (
-      <div className='mainContainer'>
+      <main className='mainContainer'>
         <div className='mainContainer__banner'>
           <h1>Evy Trichereau</h1>
           <p>Développeuse web fullstack</p>
         </div>
-        <div className='mainContainer__skills'>
+        <section className='mainContainer__skills'>
+          <i class="fa-solid fa-bookmark"></i>
           <h2 className='mainContainer__skills--title'>Mes compétences</h2>
           <div className='mainContainer__skills--skillsContainer'>
             <MappedList data={languages} type="tab"/>
             <MappedList data={tools} type="badge"/>
           </div>
-        </div>
-        <div className='mainContainer__projects'>
-          <h2>Mes projets</h2>
-          <ul>
-            {works.map((work, index) => (
-              <li>
-                <WorkCard {...work} key={index}/>
+        </section>
+        <section className='mainContainer__projects'>
+          <h2 className='mainContainer__projects--title'>Mes projets</h2>
+          <ul className='mainContainer__projects__projectsContainer'>
+            {works.map((work) => (
+              <li className='mainContainer__projects__projectsContainer--project' key={work.id}>
+                <WorkCard {...work}/>
               </li>
             ))}
           </ul>
-        </div>
-        <div className='mainContainer__Contact'>
+        </section>
+        <section className='mainContainer__Contact'>
           <h2>Contact</h2>
-        </div>
-      </div>
+        </section>
+      </main>
     )
 }
 

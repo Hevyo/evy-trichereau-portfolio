@@ -1,5 +1,6 @@
 [
     {
+        "id" : "poc1",
         "title" : "Booki",
         "pictures" : [
             "/workimages/booki_home_screenshot.png"
@@ -12,6 +13,7 @@
         "github" : "https://github.com/Hevyo/Booki"
     },
     {
+        "id" : "poc2",
         "title" : "Sophie Bluel - portfolio",
         "pictures" : [
             "/workimages/sophiebluel_home_screenshot.png",
@@ -26,6 +28,7 @@
         "github" : "https://github.com/Hevyo/Portfolio-architecte-sophie-bluel"
     },
     {
+        "id" : "poc3",
         "title" : "Nina Carducci - SEO",
         "pictures" : [
             "/workimages/ninacarducci_home_screenshot.png"
@@ -38,6 +41,7 @@
         "github" : "https://github.com/Hevyo/nina-carducci.github.io"
     },
     {
+        "id" : "poc4",
         "title" : "Kasa",
         "pictures" : [
             "/workimages/kasa_home_screenshot.png",
@@ -54,6 +58,7 @@
         "github" : "https://github.com/Hevyo/nina-carducci.github.io"
     },
     {
+        "id" : "poc5",
         "title" : "Mon Vieux Grimoire",
         "pictures" : [
             "/workimages/monvieuxgrimoire_home_screenshot.png",
@@ -61,7 +66,7 @@
             "/workimages/monvieuxgrimoire_login_screenshot.png",
             "/workimages/monvieuxgrimoire_addabook_screenshot.png"
         ],
-        "description" : "Développement du back-end d'un site de notation de livres en créant en serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données. Création d'une API RESTful avec implémentation des opérations CRUD pour créer, lire, mettre à jour et supprimer les données",
+        "description" : "Développement du back-end d'un site de notation de livres en créant en serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données. Création d'une API RESTful avec implémentation des opérations CRUD pour créer, lire, mettre à jour et supprimer les données.",
         "languagesandtools" : [
             "Express",
             "MongoDB",

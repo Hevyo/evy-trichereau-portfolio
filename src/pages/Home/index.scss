@@ -13,7 +13,7 @@
     &__skills{
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         margin: auto;
         &--title{
             width: 100%;
@@ -21,6 +21,26 @@
         &--skillsContainer{
             display: flex;
             flex-direction: row;
+        }
+    }
+    &__projects{
+        background-color: rgb(114, 116, 136);
+        &--title{
+            text-align: right;
+            padding-right: 5%;
+        }
+        &__projectsContainer{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding-left: 0;
+            &--project{
+                list-style-type: none;
+            }
         }
     }
 }

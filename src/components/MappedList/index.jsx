@@ -6,7 +6,7 @@ function MappedList({data, type}) {
     const SkillsList = ({ skills, type }) => (
         <ul className={type === 'tab' ? "SkillsContainer__tabsList" : "SkillsContainer__badgesList"}>
         {skills.map((skill, index) => (
-            <li key={index} className={type === 'tab' ? "SkillsContainer__tabsList--skill" : "SkillsContainer__badgesList--skill"}>
+            <li key={`${skill.title}-${index}`} className={type === 'tab' ? "SkillsContainer__tabsList--skill" : "SkillsContainer__badgesList--skill"}>
             {type === 'tab' ? (
                 <Tab {...skill} />
             ) : (
