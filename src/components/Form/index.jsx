@@ -1,4 +1,4 @@
-import { Form, Button, Row, Col, FloatingLabel, Alert, Fade } from 'react-bootstrap';
+import { Form, Button, Row, Col, FloatingLabel, Alert} from 'react-bootstrap';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './index.scss'
