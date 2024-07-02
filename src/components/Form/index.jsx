@@ -1,6 +1,7 @@
-import { Form, Button, Row, Col, FloatingLabel } from 'react-bootstrap';
+import { Form, Button, Row, Col, FloatingLabel, Alert, Fade } from 'react-bootstrap';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import './index.scss'
 
 function ContactForm() {
 
@@ -12,6 +13,10 @@ function ContactForm() {
         email: '',
         message: ''
       });
+
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
+    const [alertVariant, setAlertVariant] = useState('success');
 
     const handleInputChange = (event) => {
         const {id , value} = event.target;
@@ -41,11 +46,15 @@ function ContactForm() {
           )
           .then((response) => {
             console.log('Email envoyé avec succès!', response.status, response.text);
-            alert('Email envoyé avec succès');
+            setAlertMessage('Email envoyé avec succès !');
+            setAlertVariant('success');
+            setShowAlert(true);
           })
           .catch((err) => {
             console.error('Erreur lors de l\'envoi de l\'email:', err);
-            alert('Erreur lors de l\'envoi de l\'email');
+            setAlertMessage('Erreur lors de l\'envoi de l\'email.');
+            setAlertVariant('danger');
+            setShowAlert(true);
           });
         }
     
@@ -53,7 +62,12 @@ function ContactForm() {
       };
 
     return(
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form className='form' noValidate validated={validated} onSubmit={handleSubmit}>
+            {showAlert && (
+                <Alert variant={alertVariant} onClose={() => setShowAlert(false)} dismissible>
+                    {alertMessage}
+                </Alert>
+            )}
             <Row>
                 <Form.Group as={Col} className="mb-3">
                     <FloatingLabel label="Prénom" controlId="firstName">
@@ -88,9 +102,11 @@ function ContactForm() {
                 </Form.Control.Feedback>
                 </FloatingLabel>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <div className="d-grid gap-2">
+            <Button size="mb" variant="dark" type="submit">
                 Envoyer
             </Button>
+            </div>
         </Form>
     )
 }

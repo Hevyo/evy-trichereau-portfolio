@@ -39,7 +39,7 @@ function WorkCard({...work}) {
             </Card>
         </div>
   
-        <Modal size="xl" show={show} onHide={handleClose} animation={false}>
+        <Modal size="xl" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>{work.title}</Modal.Title>
           </Modal.Header>
