@@ -1,44 +1,40 @@
 import './index.scss'
-import { useState, useRef } from "react"
+import { useState} from "react"
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
 
 function Tab({title, description, picture}) {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
-
-    const contentRef = useRef()
+    const [open, setOpen] = useState(false);
 
     return (
-        <div className="tab" title={title} picture={picture} onClick={toggle}>
-            <button className='tab__button'>
-                <div className='tab__button__groupTitle'>
-                    <img className="tab__button__groupTitle--logo" src={picture} alt={`logo de ${title}`}/>
-                    <h3 className="tab__button__groupTitle--title">{title}</h3>
-                </div>
-                <i
-                    className={
-                        isOpen
-                            ? "fa-solid fa-bars tab__button--arrowDown"
-                            : "fa-solid fa-bars tab__button--arrow"
-                    }
-                />
-            </button>
-            <div
-                className='tab__boxInfo'
-                ref={contentRef}
-                style={
-                    isOpen
-                        ? { height: contentRef.current.scrollHeight + "px" }
-                        : { height: "0px" }
-                }
-            >
-                <p className='tab__boxInfo--description'>
-                    {description}
-                </p>
+        <div className="d-grid gap-2 tab">
+        <Button
+        className='tab__button'
+        variant='secondary'
+        onClick={() => setOpen(!open)}
+        aria-controls="collapse-text"
+        aria-expanded={open}
+        >
+            <div className='tab__button__groupTitle'>
+                <img className="tab__button__groupTitle--logo" src={picture} alt={`logo de ${title}`}/>
+                <h3 className="tab__button__groupTitle--title">{title}</h3>
             </div>
-        </div>
+            <i
+                className={
+                    open
+                        ? "fa-solid fa-bars tab__button--arrowDown"
+                        : "fa-solid fa-bars tab__button--arrow"
+                }
+            />
+        </Button>
+        <Collapse in={open}>
+          <div id="collapse-text" className='tab__boxInfo'>
+            <p className='tab__boxInfo--description'>
+                {description}
+            </p>
+          </div>
+        </Collapse>
+      </div>
     )
 }
 

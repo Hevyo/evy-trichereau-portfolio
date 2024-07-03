@@ -1,8 +1,20 @@
 .badge{
+    padding: 0 10px !important;
+    min-width: 82px;
     &__picture{
+        margin-top: 10px;
         height: 35px;
     }
     &__title{
-        font-size: 24px;
+        margin-top: 5px;
+        font-size: 1.8em;
     }
+    @media (max-width: 600px) {
+        &__picture{
+            height: 25px;
+        }
+        &__title{
+            font-size: 1.2em;
+        }
+    }  
 }
