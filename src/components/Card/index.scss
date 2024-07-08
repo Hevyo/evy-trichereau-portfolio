@@ -3,13 +3,34 @@
     border: grey 3px solid
 }
 
-.cardImage {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-.logo {
-    height: 25px;
+.card{
+    min-height: 540px;
+    &__image{
+        height: 250px;
+        overflow: hidden;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 !important;
+        &--title{
+            background-color: black;
+            color: white !important;
+            font-size: 1.4em;
+            padding-left: 5%;
+        }
+        &--description{
+            padding: 2% 5% 0 5%;
+        }
+        &--linkDiv {
+            padding: 5%;
+            &--logo{
+                height: 25px;
+            }
+        }
+    }
 }
