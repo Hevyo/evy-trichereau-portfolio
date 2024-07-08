@@ -1,8 +1,3 @@
-.workImages {
-    width: 95%;
-    border: grey 3px solid
-}
-
 .card{
     min-height: 540px;
     &__image{
@@ -31,6 +26,24 @@
             &--logo{
                 height: 25px;
             }
+        }
+    }
+}
+
+.modal{
+    &__body{
+    height: 750px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }
+    &__sliderControl{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-around;
+        &--imageCounter{
+            line-height: 38px;
+            margin: 0;
         }
     }
 }
