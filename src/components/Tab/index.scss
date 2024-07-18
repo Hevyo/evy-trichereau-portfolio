@@ -1,5 +1,8 @@
 
+@import '~bootstrap/scss/bootstrap';
+
 .tab {
+    height: 100%;
     &__button {
         display: flex !important;
         justify-content: space-between;
@@ -16,13 +19,14 @@
                 font-size: 1.5em;
                 line-height: 1.5em;
                 margin: 0;
+                color: white;
             }
             @media (max-width: 600px) {
                 &--logo{
                     height: 25px;
                 }
                 &--title{
-                    font-size: 1.2em;
+                    font-size: 1em;
                 }
             }  
         }
@@ -37,8 +41,11 @@
             font-size: 20px;
         }
         &:hover {
-            background: darken(grey, 20%);
+            background-color: $secondary !important;
             box-shadow: 0px 0px 9px -1px #000000;
+            &--title{
+                color: black;
+            }
         }
     }
     &__boxInfo {
@@ -46,6 +53,7 @@
             font-size: 18px;
             padding: 0 30px;
             text-align: center;
+            color: white;
         }
     }
 }

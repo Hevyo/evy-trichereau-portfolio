@@ -70,7 +70,7 @@ function ContactForm() {
             )}
             <Row>
                 <Form.Group as={Col} className="mb-3">
-                    <FloatingLabel label="Prénom" controlId="firstName">
+                    <FloatingLabel className="form__label" label="Prénom" controlId="firstName">
                         <Form.Control required placeholder="Prénom" value={formData.firstName} onChange={handleInputChange}/>
                         <Form.Control.Feedback type="invalid">
                             Veuillez entrer votre prénom.
@@ -78,7 +78,7 @@ function ContactForm() {
                     </FloatingLabel>
                 </Form.Group>
                 <Form.Group as={Col} className="mb-3">
-                    <FloatingLabel label="Nom" controlId="lastName">
+                    <FloatingLabel className="form__label" label="Nom" controlId="lastName">
                         <Form.Control required placeholder="Nom" value={formData.lastName} onChange={handleInputChange}/>
                         <Form.Control.Feedback type="invalid">
                             Veuillez entrer votre nom.
@@ -87,7 +87,7 @@ function ContactForm() {
                 </Form.Group>
             </Row>
             <Form.Group className="mb-3">
-                <FloatingLabel label="Adresse mail" controlId="email">
+                <FloatingLabel className="form__label" label="Adresse mail" controlId="email">
                     <Form.Control required type="email" placeholder="Adresse mail" value={formData.email} onChange={handleInputChange}/>
                     <Form.Control.Feedback type="invalid">
                         Veuillez entrer une adresse mail valide.
@@ -95,7 +95,7 @@ function ContactForm() {
                 </FloatingLabel>
             </Form.Group>
             <Form.Group className="mb-3">
-                <FloatingLabel label="Votre message" controlId="message">
+                <FloatingLabel className="form__label" label="Votre message" controlId="message">
                 <Form.Control required as="textarea" style={{ height: '100px' }} placeholder="Enter email" value={formData.message} onChange={handleInputChange}/>
                 <Form.Control.Feedback type="invalid">
                     Veuillez entrer votre message.
@@ -103,7 +103,7 @@ function ContactForm() {
                 </FloatingLabel>
             </Form.Group>
             <div className="d-grid gap-2">
-            <Button size="mb" variant="dark" type="submit">
+            <Button size="mb" type="submit">
                 Envoyer
             </Button>
             </div>

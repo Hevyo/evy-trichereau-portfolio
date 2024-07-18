@@ -61,8 +61,8 @@ function WorkCard({...work}) {
         </div>
 
         <Modal className="modal" size="xl" show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>{work.title}</Modal.Title>
+          <Modal.Header className="modal__header" closeButton>
+            <Modal.Title className="text-secondary">{work.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modal__body">
               <Slider
@@ -71,23 +71,25 @@ function WorkCard({...work}) {
                 index={index}
             />
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="modal__footer">
           {work.pictures.length > 1 && (
-                <div className='modal__sliderControl'>
-                    <Button variant="dark" onClick={handlePrevious}>
-                        <i className="fa-solid fa-chevron-left slider__button__icon"></i>
+                <div className='modal__footer__sliderControl'>
+                    <Button variant="secondary" onClick={handlePrevious}>
+                        <i className="fa-solid fa-chevron-left"></i>
                     </Button>
-                    <p className="modal__sliderControl--imageCounter">
-                        {index + 1}/{work.pictures.length}
-                    </p>
-                    <Button variant="dark" onClick={handleNext}>
-                        <i className="fa-solid fa-chevron-right slider__button__icon"></i>
+                    <div className="modal__footer__sliderControl--indicators">
+                        {work.pictures.map((_, idx) => (
+                            <span
+                                key={idx}
+                                className={`modal__footer__sliderControl--indicators--indicator ${index === idx ? 'active' : ''}`}
+                            ></span>
+                        ))}
+                    </div>
+                    <Button variant="secondary" onClick={handleNext}>
+                        <i className="fa-solid fa-chevron-right"></i>
                     </Button>
                 </div>
             )}
-            <Button variant="secondary" onClick={handleClose}>
-              Fermer
-            </Button>
           </Modal.Footer>
         </Modal>
       </>

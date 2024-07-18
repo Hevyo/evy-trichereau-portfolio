@@ -10,7 +10,7 @@ function Tab({title, description, picture}) {
         <div className="d-grid gap-2 tab">
         <Button
         className='tab__button'
-        variant='secondary'
+        variant='light'
         onClick={() => setOpen(!open)}
         aria-controls="collapse-text"
         aria-expanded={open}

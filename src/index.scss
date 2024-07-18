@@ -1,6 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 
 *{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: 'GothamPro';
+    font-weight: 500;
+}
+
+#root {
+    background-color: $primary;
+}
+
+h1, h2, h3 {
+    color: $secondary;
 }

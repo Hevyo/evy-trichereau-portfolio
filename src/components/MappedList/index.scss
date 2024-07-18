@@ -4,30 +4,38 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0;
-        gap: 10px;
-        justify-content: space-evenly;
+        gap: 17px;
+        justify-content: space-between;
+        height: 100%;
         &--skill{
             list-style-type: none;
-            width: 45%;
+            width: 48%;
         }
     }
     &__badgesList {
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         padding: 0;
-        justify-content: center;
         &--skill{
             list-style-type: none;
+            display: flex;
+            flex: 1 1;
         }
     }
     @media (max-width: 500px) {
         &__tabsList {
             flex-direction: column;
             align-items: center;
+            gap: 10px;
             &--skill{
                 width: 90%;
             }
+        }
+        &__badgesList {
+            width: 90%;
+            margin: auto;
         }
     }
 }

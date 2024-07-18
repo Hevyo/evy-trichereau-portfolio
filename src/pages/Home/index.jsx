@@ -13,10 +13,9 @@ function Home({ homeRef, abilitiesRef, projectsRef, contactRef }) {
       <main className='mainContainer'>
         <header ref={homeRef} className='mainContainer__banner'>
           <h1>Evy Trichereau</h1>
-          <p>Développeuse web fullstack</p>
+          <p className='mainContainer__banner--subtitle'>Développeuse web fullstack</p>
         </header>
         <section ref={abilitiesRef} className='mainContainer__skills'>
-          <i className="fa-solid fa-bookmark"></i>
           <h2 className='mainContainer__skills--title'>Mes compétences</h2>
           <div className='mainContainer__skills--skillsContainer'>
             <MappedList data={languages} type="tab"/>
@@ -33,8 +32,8 @@ function Home({ homeRef, abilitiesRef, projectsRef, contactRef }) {
             ))}
           </ul>
         </section>
-        <section ref={contactRef} className='mainContainer__Contact'>
-          <h2>Contact</h2>
+        <section ref={contactRef} className='mainContainer__contact'>
+          <h2 className='mainContainer__contact--title'>Contact</h2>
           <ContactForm/>
         </section>
       </main>
