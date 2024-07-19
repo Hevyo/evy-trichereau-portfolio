@@ -3,7 +3,7 @@
         "id" : "poc1",
         "title" : "Booki",
         "pictures" : [
-            "/workimages/booki_home_screenshot.png"
+            "/workimages/booki_home_screenshot.webp"
         ],
         "description" : "Création de la page d'accueil d'une agence de voyage responsive en utilisant HTML et CSS et en se basant sur une maquette.",
         "languagesandtools" : [
@@ -16,8 +16,8 @@
         "id" : "poc2",
         "title" : "Sophie Bluel - portfolio",
         "pictures" : [
-            "/workimages/sophiebluel_home_screenshot.png",
-            "/workimages/sophiebluel_login_screenshot.png"
+            "/workimages/sophiebluel_home_screenshot.webp",
+            "/workimages/sophiebluel_login_screenshot.webp"
         ],
         "description" : "Création d'un portfolio d'architecte d'intérieur avec une interface dynamique communiquant avec une API à l'aide de JavaScript",
         "languagesandtools" : [
@@ -31,7 +31,7 @@
         "id" : "poc3",
         "title" : "Nina Carducci - SEO",
         "pictures" : [
-            "/workimages/ninacarducci_home_screenshot.png"
+            "/workimages/ninacarducci_home_screenshot.webp"
         ],
         "description" : "Débuggage et travail sur l'optimisation du référencement (SEO), les performances et l'accessibilité d'un portfolio de photographe",
         "languagesandtools" : [
@@ -44,10 +44,10 @@
         "id" : "poc4",
         "title" : "Kasa",
         "pictures" : [
-            "/workimages/kasa_home_screenshot.png",
-            "/workimages/kasa_about_screenshot.png",
-            "/workimages/kasa_accomodation_screenshot.png",
-            "/workimages/kasa_error_screenshot.png"
+            "/workimages/kasa_home_screenshot.webp",
+            "/workimages/kasa_about_screenshot.webp",
+            "/workimages/kasa_accomodation_screenshot.webp",
+            "/workimages/kasa_error_screenshot.webp"
         ],
         "description" : "Intégration du front-end d'une entreprise de location d'appartements à l'aide de React en utilisant des composants modulaires. Utilisation de SASS pour gérer le CSS. Intégration d'animations simples.",
         "languagesandtools" : [
@@ -61,10 +61,10 @@
         "id" : "poc5",
         "title" : "Mon Vieux Grimoire",
         "pictures" : [
-            "/workimages/monvieuxgrimoire_home_screenshot.png",
-            "/workimages/monvieuxgrimoire_book_screenshot.png",
-            "/workimages/monvieuxgrimoire_login_screenshot.png",
-            "/workimages/monvieuxgrimoire_addabook_screenshot.png"
+            "/workimages/monvieuxgrimoire_home_screenshot.webp",
+            "/workimages/monvieuxgrimoire_book_screenshot.webp",
+            "/workimages/monvieuxgrimoire_login_screenshot.webp",
+            "/workimages/monvieuxgrimoire_addabook_screenshot.webp"
         ],
         "description" : "Développement du back-end d'un site de notation de livres en créant en serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données. Création d'une API RESTful.",
         "languagesandtools" : [

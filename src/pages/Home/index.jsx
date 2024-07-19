@@ -12,7 +12,7 @@ function Home({ homeRef, abilitiesRef, projectsRef, contactRef }) {
     return (
       <main className='mainContainer'>
         <header ref={homeRef} className='mainContainer__banner'>
-          <h1>Evy Trichereau</h1>
+          <h1 className='mainContainer__banner--title'>Evy Trichereau</h1>
           <p className='mainContainer__banner--subtitle'>Développeuse web fullstack</p>
         </header>
         <section ref={abilitiesRef} className='mainContainer__skills'>
