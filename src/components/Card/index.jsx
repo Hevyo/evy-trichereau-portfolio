@@ -59,16 +59,12 @@ function WorkCard({...work}) {
         });
     });
 
-    const h3WithClassName = (className) => {
-      return ({ children, ...props }) => <h3 className={className} {...props}>{children}</h3>;
-    };
-
     return(
         <>
             <Card style={{ width: '25rem' }} className='card' border="dark">
                 <Card.Img onClick={handleShow} className="card__image" variant="top" src={work.pictures[0]} alt={`Screenshot du site ${work.title}`} tabIndex={0} />
                 <Card.Body className="card__body">
-                    <Card.Title as={h3WithClassName('custom-title-class')} className="card__body--title">{work.title}</Card.Title>
+                    <Card.Title as={"h3"} className="card__body--title">{work.title}</Card.Title>
                     <Card.Text className="card__body--description">{work.description}</Card.Text>
                     <MappedList data={filteredSkills} type="badge" size="small"/>
                     <div className="card__body--linkDiv">
