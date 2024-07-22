@@ -7,6 +7,12 @@
 
 #root {
     background-color: $primary;
+    background-image: url('./assets/noise.webp');
+    background-size: cover;
+    background-blend-mode: multiply; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 h1, h2, h3 {

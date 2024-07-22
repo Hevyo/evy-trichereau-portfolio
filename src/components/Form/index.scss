@@ -10,6 +10,7 @@
         border: $info 1px solid;
         background-color: $dark;
         color: white;
+        box-shadow: 0px -2px 12px 6px rgba(0,0,0,0.24);
         &:focus {
             background-color: $dark;
             color: white;

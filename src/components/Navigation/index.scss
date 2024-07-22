@@ -10,3 +10,10 @@
     color: darken($secondary, 15%) !important;
 }
 
+.navbar-toggler{
+    background-color: $secondary !important;
+    &:hover{
+        filter: brightness(90%) !important;
+    }
+}
+

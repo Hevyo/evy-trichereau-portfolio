@@ -3,6 +3,7 @@
 .card{
     min-height: 560px;
     border: none !important;
+    box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.24);
     &__image{
         height: 250px;
         overflow: hidden;
@@ -90,19 +91,12 @@
 }
 
 .modal{
-    &__header{
-        background-color: darken($primary, 10%);
-        border: 0 !important;
-    }
     &__body{
-    background-color: $primary;
-    height: 750px;
+    height: 75vh;
     padding: 0 !important;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -110,28 +104,37 @@
         &::-webkit-scrollbar {
             display: none;
         }
+        @media(max-width: 1200px){
+            align-items: center;
+        }
+        @media(max-width: 1000px){
+            height: 50vh;
+        }
+        @media(max-width: 500px){
+            height: 35vh;
+        }
     }
     &__footer{
-        border: 0 !important;
-        background: darken($primary, 10%) !important;
         &__sliderControl{
-            background-color: darken($primary, 10%);
             display: flex;
             flex-direction: row;
             width: 100%;
             justify-content: space-around;
             align-items: center;
+            &--buttonLogo{
+                color: $secondary;
+            }
             &--indicators {
                 display: flex;
                 gap: 10px;
                 &--indicator{
                     width: 10px;
                     height: 10px;
-                    background-color: $secondary;
+                    background-color: $primary;
                     border-radius: 50%;
                     transition: all 0.3s ease;
                     &.active {
-                        background-color: darken($secondary, 30%);
+                        background-color: darken($secondary, 20%);
                     }
                 }
             }
