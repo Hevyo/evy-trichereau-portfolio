@@ -2,12 +2,12 @@
 
 *{
     font-family: 'GothamPro';
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #root {
     background-color: $primary;
-    background-image: url('./assets/noise.webp');
+    background-image: url('./assets/background.webp');
     background-size: cover;
     background-blend-mode: multiply; 
     background-attachment: fixed; 

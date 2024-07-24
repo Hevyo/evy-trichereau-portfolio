@@ -1,13 +1,12 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import "./index.scss"
-import Logo from "../../assets/logo.webp"
 
 function Navigation({ handleScroll}) {
     return (
         <Navbar sticky="top" expand="lg" bg="primary">
           <Container>
             <Navbar.Brand href="#home" onClick={(e) => handleScroll(e, 'home')}>
-              <img src={Logo} className='logo' width="35" height="35" alt="Logo de Evy Trichereau"/>
+              <img src="/logo.webp" className='logo' width="35" height="35" alt="Logo de Evy Trichereau"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className=' justify-content-end flex-grow-0'>

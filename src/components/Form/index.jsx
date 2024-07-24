@@ -96,7 +96,7 @@ function ContactForm() {
             </Form.Group>
             <Form.Group className="mb-3">
                 <FloatingLabel className="form__label" label="Votre message" controlId="message">
-                <Form.Control required as="textarea" style={{ height: '100px' }} placeholder="Enter email" value={formData.message} onChange={handleInputChange}/>
+                <Form.Control required as="textarea" style={{ height: '100px' }} placeholder="Votre message" value={formData.message} onChange={handleInputChange}/>
                 <Form.Control.Feedback type="invalid">
                     Veuillez entrer votre message.
                 </Form.Control.Feedback>

@@ -1,13 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 
 .nav-link{
+    font-weight: 500 !important;
     &:hover{
         color: darken($secondary, 15%) !important;
+        opacity: 1;
     }
-}
-
-.nav-link.active{
-    color: darken($secondary, 15%) !important;
+    &.active{
+        color: darken($secondary, 15%) !important;
+        opacity: 1;
+    }
 }
 
 .navbar-toggler{
@@ -19,4 +21,8 @@
 
 .navbar-brand{
     padding: 0 !important;
+}
+
+.bg-primary {
+    --bs-bg-opacity: .5 !important;
 }
