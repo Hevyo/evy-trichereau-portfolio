@@ -1,38 +1,38 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-.card{
+.card {
     min-height: 560px;
     border: none !important;
-    box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.24);
-    &__image{
+    box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.24);
+    &__image {
         height: 250px;
         overflow: hidden;
         width: 100%;
         object-fit: cover;
         object-position: top;
         cursor: pointer;
-        &:hover{
+        &:hover {
             box-shadow: 0px 0px 9px -1px #000000;
             filter: brightness(80%);
         }
     }
-    &__body{
+    &__body {
         padding: 3% 7% !important;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: darken($primary, 2%);
-        &--title{
+        &--title {
             color: $secondary !important;
             font-size: 1.4em;
             align-self: flex-start;
         }
-        &--description{
+        &--description {
             color: white;
         }
-        .SkillsContainer__badgesList{
+        .SkillsContainer__badgesList {
             justify-content: center;
-            &--skill{
+            &--skill {
                 flex: none;
             }
         }
@@ -40,14 +40,14 @@
             display: flex;
             gap: 8px;
             margin-top: 3%;
-            &--logo{
+            &--logo {
                 height: 25px;
             }
-            &--link{
+            &--link {
                 color: white;
                 text-decoration: none;
                 font-style: italic;
-                &:hover{
+                &:hover {
                     color: $secondary;
                 }
             }
@@ -56,78 +56,78 @@
     @media (max-width: 500px) {
         width: 100% !important;
         min-height: 400px;
-        &__image{
+        &__image {
             height: 180px;
         }
-        &__body{
+        &__body {
             padding: 2% 5% !important;
-            &--title{
+            &--title {
                 font-size: 1.2em;
             }
-            &--description{
+            &--description {
                 font-size: 1em;
                 font-weight: 400;
             }
-            &--linkDiv{
-                &--logo{
+            &--linkDiv {
+                &--logo {
                     height: 20px;
                 }
-                &--link{
+                &--link {
                     font-weight: 400;
-                    font-size: .9em;
+                    font-size: 0.9em;
                 }
             }
         }
     }
     @media (max-width: 600px) {
-        .smallBadge__picture{
+        .smallBadge__picture {
             height: 20px;
         }
-        .smallBadge__title{
-            font-size: .8em;
+        .smallBadge__title {
+            font-size: 0.8em;
             font-weight: 400;
         }
     }
 }
 
-.modal{
-    &__body{
-    height: 75vh;
-    padding: 0 !important;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: flex;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    /* Hide scrollbar for Chrome, Safari and Opera */
+.modal {
+    &__body {
+        height: 75vh;
+        padding: 0 !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        /* Hide scrollbar for Chrome, Safari and Opera */
         &::-webkit-scrollbar {
             display: none;
         }
-        @media(max-width: 1200px){
+        @media (max-width: 1200px) {
             align-items: center;
         }
-        @media(max-width: 1000px){
+        @media (max-width: 1000px) {
             height: 50vh;
         }
-        @media(max-width: 500px){
+        @media (max-width: 500px) {
             height: 35vh;
         }
     }
-    &__footer{
-        &__sliderControl{
+    &__footer {
+        &__sliderControl {
             display: flex;
             flex-direction: row;
             width: 100%;
             justify-content: space-around;
             align-items: center;
-            &--buttonLogo{
+            &--buttonLogo {
                 color: $secondary;
             }
             &--indicators {
                 display: flex;
                 gap: 10px;
-                &--indicator{
+                &--indicator {
                     width: 10px;
                     height: 10px;
                     background-color: $primary;

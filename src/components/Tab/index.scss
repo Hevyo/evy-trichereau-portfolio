@@ -1,5 +1,4 @@
-
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 .tab {
     height: 100%;
@@ -7,15 +6,15 @@
         display: flex !important;
         justify-content: space-between;
         align-items: center;
-        &__groupTitle{
+        &__groupTitle {
             display: flex;
             width: 60%;
             gap: 10%;
             align-items: center;
-            &--logo{
+            &--logo {
                 height: 35px;
             }
-            &--title{
+            &--title {
                 font-size: 1.5em;
                 line-height: 1.5em;
                 font-weight: 400;
@@ -23,13 +22,13 @@
                 color: white;
             }
             @media (max-width: 600px) {
-                &--logo{
+                &--logo {
                     height: 25px;
                 }
-                &--title{
+                &--title {
                     font-size: 1em;
                 }
-            }  
+            }
         }
         &--arrow {
             transform: rotate(360deg);
@@ -56,7 +55,7 @@
             text-align: center;
             color: white;
             @media (max-width: 600px) {
-                font-size: .9em;
+                font-size: 0.9em;
             }
         }
     }

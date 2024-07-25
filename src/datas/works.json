@@ -1,77 +1,55 @@
 [
     {
-        "id" : "poc1",
-        "title" : "Booki",
-        "pictures" : [
-            "/workimages/booki_home_screenshot.webp"
-        ],
-        "description" : "Création de la page d'accueil d'une agence de voyage avec une interface responsive et conforme à une maquette en utilisant HTML et CSS.",
-        "languagesandtools" : [
-            "HTML",
-            "CSS"
-        ],
-        "github" : "https://github.com/Hevyo/Booki"
+        "id": "poc1",
+        "title": "Booki",
+        "pictures": ["/workimages/booki_home_screenshot.webp"],
+        "description": "Création de la page d'accueil d'une agence de voyage avec une interface responsive et conforme à une maquette en utilisant HTML et CSS.",
+        "languagesandtools": ["HTML", "CSS"],
+        "github": "https://github.com/Hevyo/Booki"
     },
     {
-        "id" : "poc2",
-        "title" : "Sophie Bluel - portfolio",
-        "pictures" : [
+        "id": "poc2",
+        "title": "Sophie Bluel - portfolio",
+        "pictures": [
             "/workimages/sophiebluel_home_screenshot.webp",
             "/workimages/sophiebluel_login_screenshot.webp"
         ],
-        "description" : "Création d'un portfolio d'architecte d'intérieur avec une interface dynamique communiquant avec une API à l'aide de JavaScript.",
-        "languagesandtools" : [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "github" : "https://github.com/Hevyo/Portfolio-architecte-sophie-bluel"
+        "description": "Création d'un portfolio d'architecte d'intérieur avec une interface dynamique communiquant avec une API à l'aide de JavaScript.",
+        "languagesandtools": ["HTML", "CSS", "JavaScript"],
+        "github": "https://github.com/Hevyo/Portfolio-architecte-sophie-bluel"
     },
     {
-        "id" : "poc3",
-        "title" : "Nina Carducci - SEO",
-        "pictures" : [
-            "/workimages/ninacarducci_home_screenshot.webp"
-        ],
-        "description" : "Débuggage et travail sur l'optimisation du référencement (SEO), les performances et l'accessibilité d'un portfolio de photographe.",
-        "languagesandtools" : [
-            "HTML",
-            "JavaScript"
-        ],
-        "github" : "https://github.com/Hevyo/nina-carducci.github.io"
+        "id": "poc3",
+        "title": "Nina Carducci - SEO",
+        "pictures": ["/workimages/ninacarducci_home_screenshot.webp"],
+        "description": "Débuggage et travail sur l'optimisation du référencement (SEO), les performances et l'accessibilité d'un portfolio de photographe.",
+        "languagesandtools": ["HTML", "JavaScript"],
+        "github": "https://github.com/Hevyo/nina-carducci.github.io"
     },
     {
-        "id" : "poc4",
-        "title" : "Kasa",
-        "pictures" : [
+        "id": "poc4",
+        "title": "Kasa",
+        "pictures": [
             "/workimages/kasa_home_screenshot.webp",
             "/workimages/kasa_about_screenshot.webp",
             "/workimages/kasa_accomodation_screenshot.webp",
             "/workimages/kasa_error_screenshot.webp"
         ],
-        "description" : "Intégration du front-end d'une entreprise de location d'appartements à l'aide de React en utilisant des composants modulaires. Utilisation de SASS pour gérer le CSS. Intégration d'animations simples.",
-        "languagesandtools" : [
-            "React",
-            "JavaScript",
-            "Sass"
-        ],
-        "github" : "https://github.com/Hevyo/kasa"
+        "description": "Intégration du front-end d'une entreprise de location d'appartements à l'aide de React en utilisant des composants modulaires. Utilisation de SASS pour gérer le CSS. Intégration d'animations simples.",
+        "languagesandtools": ["React", "JavaScript", "Sass"],
+        "github": "https://github.com/Hevyo/kasa"
     },
     {
-        "id" : "poc5",
-        "title" : "Mon Vieux Grimoire",
-        "pictures" : [
+        "id": "poc5",
+        "title": "Mon Vieux Grimoire",
+        "pictures": [
             "/workimages/monvieuxgrimoire_home_screenshot.webp",
             "/workimages/monvieuxgrimoire_book_screenshot.webp",
             "/workimages/monvieuxgrimoire_login_screenshot.webp",
             "/workimages/monvieuxgrimoire_addabook_screenshot.webp"
         ],
-        "description" : "Développement du back-end d'un site de notation de livres en créant un serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données.",
-        "languagesandtools" : [
-            "Express",
-            "MongoDB",
-            "JavaScript"
-        ],
-        "github" : "https://github.com/Hevyo/Mon-Vieux-Grimoire"
+        "description": "Développement du back-end d'un site de notation de livres en créant un serveur avec Express connecté à une base de données MongoDB. Sécurisation et modélisation des données.",
+        "languagesandtools": ["Express", "MongoDB", "JavaScript"],
+        "github": "https://github.com/Hevyo/Mon-Vieux-Grimoire"
     }
 ]

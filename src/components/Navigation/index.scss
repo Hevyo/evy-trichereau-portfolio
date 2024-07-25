@@ -1,28 +1,28 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-.nav-link{
+.nav-link {
     font-weight: 500 !important;
-    &:hover{
+    &:hover {
         color: darken($secondary, 15%) !important;
         opacity: 1;
     }
-    &.active{
+    &.active {
         color: darken($secondary, 15%) !important;
         opacity: 1;
     }
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: $secondary !important;
-    &:hover{
+    &:hover {
         filter: brightness(90%) !important;
     }
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 0 !important;
 }
 
 .bg-primary {
-    --bs-bg-opacity: .5 !important;
+    --bs-bg-opacity: 0.5 !important;
 }

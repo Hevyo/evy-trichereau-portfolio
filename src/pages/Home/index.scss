@@ -1,22 +1,22 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-.mainContainer{
-    &__banner{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-        &--title{
+.mainContainer {
+    &__banner {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--title {
             margin-left: 25%;
             font-size: 4em;
         }
-        &--subtitle{
+        &--subtitle {
             margin-left: 25%;
             color: white;
             font-size: 2.5em;
         }
-        &--icon{
-            color:$secondary;
+        &--icon {
+            color: $secondary;
             font-size: 8em;
             align-self: flex-end;
             margin-right: 20%;
@@ -24,13 +24,13 @@
         }
         @media (max-width: 1000px) {
             height: 90vh;
-            &--title{
+            &--title {
                 margin-left: 12%;
             }
-            &--subtitle{
+            &--subtitle {
                 margin-left: 12%;
             }
-            &--icon{
+            &--icon {
                 margin-right: 0;
                 margin-top: 10%;
                 align-self: center;
@@ -40,22 +40,22 @@
         @media (max-width: 600px) {
             align-items: center;
             height: 30vh;
-            &--title{
+            &--title {
                 font-size: 2.5em;
                 margin-left: 0;
                 margin-top: 5%;
             }
-            &--subtitle{
+            &--subtitle {
                 font-size: 1.5em;
                 margin-left: 0;
                 margin-bottom: 0;
             }
-            &--icon{
+            &--icon {
                 font-size: 3em;
             }
         }
     }
-    &__skills{
+    &__skills {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -63,7 +63,7 @@
         padding: 3.3% 0 0 0;
         align-items: center;
         justify-content: space-between;
-        &--skillsContainer{
+        &--skillsContainer {
             display: flex;
             flex-direction: row;
             gap: 5%;
@@ -75,10 +75,12 @@
             margin-top: 3%;
             opacity: 0;
             transform: translateX(-100%);
-            transition: transform 1s ease-out, opacity 1s ease-out;
+            transition:
+                transform 1s ease-out,
+                opacity 1s ease-out;
             &.animate {
-              opacity: 1;
-              transform: translateX(0);
+                opacity: 1;
+                transform: translateX(0);
             }
             @media (max-width: 500px) {
                 font-size: 0.9em;
@@ -87,19 +89,19 @@
         }
         @media (max-width: 1300px) {
             width: 95%;
-            &--skillsContainer{
+            &--skillsContainer {
                 display: flex;
                 flex-direction: column;
                 gap: 2px;
             }
         }
     }
-    &__projects{
+    &__projects {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 3.3% 0 2% 0;
-        &__projectsContainer{
+        &__projectsContainer {
             width: 80%;
             margin: auto;
             display: flex;
@@ -111,12 +113,12 @@
             @media (max-width: 500px) {
                 width: 85%;
             }
-            &--project{
+            &--project {
                 list-style-type: none;
             }
         }
     }
-    &__contact{
+    &__contact {
         display: flex;
         padding: 3.3% 0 2% 0;
         flex-direction: column;

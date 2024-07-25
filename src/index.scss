@@ -1,21 +1,23 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-*{
-    font-family: 'GothamPro';
+* {
+    font-family: "GothamPro";
     font-weight: 400;
 }
 
 #root {
     background-color: $primary;
-    background-image: url('./assets/background.webp');
+    background-image: url("./assets/background.webp");
     background-size: cover;
-    background-blend-mode: multiply; 
-    background-attachment: fixed; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: $secondary;
 }
 
