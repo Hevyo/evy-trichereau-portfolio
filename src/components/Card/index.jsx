@@ -37,7 +37,7 @@ function WorkCard({ ...work }) {
                 handleClose()
             }
         },
-        [handlePrevious, handleNext],
+        [handlePrevious, handleNext]
     )
 
     useEffect(() => {
@@ -89,7 +89,7 @@ function WorkCard({ ...work }) {
                         <img
                             className="card__body--linkDiv--logo"
                             src="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF"
-                            alt={`Lien vers le code du site ${work.title} sur Github`}
+                            alt="Logo de Github"
                         />
                         <a
                             className="card__body--linkDiv--link"
@@ -132,7 +132,9 @@ function WorkCard({ ...work }) {
                                 {work.pictures.map((_, idx) => (
                                     <span
                                         key={idx}
-                                        className={`modal__footer__sliderControl--indicators--indicator ${index === idx ? "active" : ""}`}
+                                        className={`modal__footer__sliderControl--indicators--indicator ${
+                                            index === idx ? "active" : ""
+                                        }`}
                                     ></span>
                                 ))}
                             </div>
